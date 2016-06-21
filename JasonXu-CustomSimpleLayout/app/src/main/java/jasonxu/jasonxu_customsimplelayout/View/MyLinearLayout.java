@@ -63,7 +63,7 @@ public class MyLinearLayout extends ViewGroup {
             MarginLayoutParams lp = (MarginLayoutParams) child.getLayoutParams();
             int childWidth = child.getMeasuredWidth() + lp.leftMargin + lp.rightMargin;
             int childHeight = child.getMeasuredHeight() + lp.topMargin + lp.bottomMargin;
-            child.layout(0, top, childWidth, childHeight + top);
+            child.layout(lp.leftMargin, top, childWidth+lp.leftMargin, childHeight + top);
             top += childHeight;
         }
     }
