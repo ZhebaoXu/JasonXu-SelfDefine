@@ -1,9 +1,14 @@
 package jasonxu.jasonxu_customsimplelayout;
 
+import android.app.Dialog;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
